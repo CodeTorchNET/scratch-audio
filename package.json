@@ -23,7 +23,6 @@
   "homepage": "https://github.com/LLK/scratch-audio#readme",
   "dependencies": {
     "@turbowarp/startaudiocontext": "^1.0.0",
-    "audio-context": "1.0.1",
     "minilog": "^3.0.1"
   },
   "devDependencies": {
