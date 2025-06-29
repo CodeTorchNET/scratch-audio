@@ -22,9 +22,8 @@
   },
   "homepage": "https://github.com/LLK/scratch-audio#readme",
   "dependencies": {
-    "audio-context": "1.0.1",
-    "minilog": "^3.0.1",
-    "startaudiocontext": "1.2.1"
+    "@turbowarp/startaudiocontext": "^1.0.0",
+    "minilog": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
