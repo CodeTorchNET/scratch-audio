@@ -1,4 +1,4 @@
-# TurboWarp/scratch-audio
+# CodeTorchNET/scratch-audio
 
 A slightly modified drop-in replacement for scratch-audio.
 
