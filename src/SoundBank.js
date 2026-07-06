@@ -55,6 +55,24 @@ class SoundBank {
     }
 
     /**
+     * Stop, dispose, and remove a single sound player and its effect chain.
+     * @param {string} soundId - id of the sound player to remove
+     */
+    removeSoundPlayer (soundId) {
+        const player = this.soundPlayers[soundId];
+        if (!player) return;
+        player.stop();
+        player.dispose();
+        delete this.soundPlayers[soundId];
+        this.playerTargets.delete(soundId);
+        const effects = this.soundEffects.get(soundId);
+        if (effects) {
+            effects.dispose();
+            this.soundEffects.delete(soundId);
+        }
+    }
+
+    /**
      * Get a sound player by id.
      * @param {string} soundId - sound to look for
      * @returns {SoundPlayer} instance of sound player for the id
